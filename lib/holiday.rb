@@ -66,11 +66,22 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
   holiday_hash.each do |season, holiday|
-    season.each do |holiday, supply|
-      puts "#{holiday}: #{supply}""
+    holiday.each do |hol, sup|
+      puts "#{hol}: #{sup}""
     end 
   end 
 end
+
+
+  contacts.each do |person, data|
+   
+    data.each do |attribute, value|
+      puts "#{attribute}: #{value}"
+    end
+end
+
+
+
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
